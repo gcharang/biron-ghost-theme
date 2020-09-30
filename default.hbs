@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="{{@site.lang}}">
-  <head>
-    {{!-- Document Settings --}}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    {{!-- Page Meta --}}
-    <title>{{meta_title}}</title>
+<head>
+  {{!-- Document Settings --}}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    {{!-- Mobile Meta --}}
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{!-- Page Meta --}}
+  <title>{{meta_title}}</title>
 
-    {{!-- Styles'n'Scripts --}}
-    <link rel="stylesheet" type="text/css" href="{{asset 'css/app.min.css'}}" />
+  {{!-- Mobile Meta --}}
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{!-- Ghost outputs important style and meta data with this tag --}}
-    {{ghost_head}}
-  </head>
-  <body class="{{body_class}}">
+  {{!-- Styles'n'Scripts --}}
+  <link rel="stylesheet" type="text/css" href="{{asset 'css/app.min.css'}}" />
 
-    {{!-- Icons --}}
-    <div class="is-hidden">
-      {{> icon-sprite}}
-    </div>
+  {{!-- Ghost outputs important style and meta data with this tag --}}
+  {{ghost_head}}
+</head>
 
-    {{> header}}
+<body class="{{body_class}}">
 
-    <main class="main">
-      {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
-      {{{body}}}
-    </main>
+  {{!-- Icons --}}
+  <div class="is-hidden">
+    {{> icon-sprite}}
+  </div>
 
-    {{!-- The footer at the very bottom --}}
-    {{> footer}}
+  {{> header}}
 
-    {{!-- Global variables --}}
-    <script>
-      // Disqus shortname
-      // Replace 'bironthemes-demo' with your disqus account shortname
-      var disqus_shortname = 'biron-demo';
-    </script>
+  <main class="main">
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
+    {{{body}}}
+  </main>
 
-    {{!-- Ghost outputs important scripts and data with this tag --}}
-    {{ghost_foot}}
+  {{!-- The footer at the very bottom --}}
+  {{> footer}}
 
-    {{!-- Main theme scripts --}}
-    <script async src="{{asset 'js/app.min.js'}}"></script>
-  </body>
+  {{!-- Global variables --}}
+  <script>
+    // Disqus shortname
+    // Replace 'bironthemes-demo' with your disqus account shortname
+    var disqus_shortname = 'biron-demo';
+  </script>
+
+  {{!-- Ghost outputs important scripts and data with this tag --}}
+  {{ghost_foot}}
+
+  {{!-- Main theme scripts --}}
+  <script async src="{{asset 'js/app.min.js'}}"></script>
+</body>
+
 </html>

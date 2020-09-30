@@ -1,5 +1,8 @@
 # Biron - Ghost Theme 
 
+
+GH - Action: https://github.com/marketplace/actions/deploy-ghost-theme
+
 Biron is a Free Ghost Theme based on [Bulma](https://bulma.io/)
 By [Biron Themes](https://bironthemes.com)
 
