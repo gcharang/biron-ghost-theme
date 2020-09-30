@@ -1,16 +1,13 @@
 {{!-- Discourse comments --}}
-<div id='discourse-comments'></div>
 
-<script type="text/javascript">
-  DiscourseEmbed = {
-    discourseUrl: 'https://forum.kmd.io/',
-    discourseEmbedUrl: '{{url absolute="true"}}'
-  };
+<div class="comments" id="comments">
+  <hr>
+  <div id='discourse-comments'></div>
+</div>
+<noscript>
+  Please enable JavaScript to view the
+  <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
 
-  (function () {
-    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
-  })();
-</script>
+
 {{!-- End of Discourse comments --}}
