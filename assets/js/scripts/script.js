@@ -191,20 +191,4 @@ function loadComments() {
    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
    */
-
-  var DiscourseEmbed = {
-    discourseUrl: "https://forum.kmd.io/",
-    discourseEmbedUrl: '{{ url absolute = "true" }}',
-  };
-
-  (function () {
-    var d = document.createElement("script");
-    d.type = "text/javascript";
-    d.async = true;
-    d.src = DiscourseEmbed.discourseUrl + "javascripts/embed.js";
-    (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
-    ).appendChild(d);
-  })();
 }
