@@ -76,18 +76,18 @@ var callback = function () {
   // =======================================
   // Load comments when it's in the viewport
   // =======================================
-  var comments = document.getElementById("comments");
-
-  if (comments) {
-    var scroll = function (e) {
-      if (isInViewport(comments) == true) {
-        loadComments();
-        document.removeEventListener("scroll", scroll, true);
-      }
-    };
-    document.addEventListener("scroll", scroll, true);
-  }
-
+  //  //var comments = document.getElementById("comments");
+  //
+  //  if (comments) {
+  //    var scroll = function (e) {
+  //      if (isInViewport(comments) == true) {
+  //        loadComments();
+  //        document.removeEventListener("scroll", scroll, true);
+  //      }
+  //    };
+  //    document.addEventListener("scroll", scroll, true);
+  //  }
+  //
   // =============
   // Image Gallery
   // =============
